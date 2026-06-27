@@ -1,26 +1,26 @@
 from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
-from predict import predict_image
-from model import load_model
+from backend.predict import predict_image
+from backend.model import load_model
 
-# Create FastAPI app
+
 app = FastAPI(
     title="Pneumonia Classifier API",
     description="Chest X-ray Pneumonia Detection using ResNet18",
     version="1.0.0"
 )
 
-# Enable CORS
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],      # Change this after deployment
+    allow_origins=["https://pneumono-scan.lakshyakarn.com.np", "http://localhost:5174","https://pneumo-scan-ai-phi.vercel.app"],      # Change this after deployment
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# Load model once when the server starts
+
 model = load_model()
 
 
