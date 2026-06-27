@@ -14,7 +14,7 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://pneumono-scan.lakshyakarn.com.np", "http://localhost:5174","https://pneumo-scan-ai-phi.vercel.app"],      # Change this after deployment
+    allow_origins=["https://pneumo-scan.lakshyakarn.com.np/", "http://localhost:5174","https://pneumo-scan-ai-phi.vercel.app"],      # Change this after deployment
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

@@ -11,7 +11,7 @@ export default function Navbar() {
           </div>
           <div>
             <h1 className="font-bold text-lg leading-tight bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
-              PulmoScan AI
+              PneumoScan AI
             </h1>
             <p className="text-[9px] text-slate-400 font-bold uppercase tracking-wider">
               AI Diagnostic Assistant
