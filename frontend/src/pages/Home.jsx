@@ -88,6 +88,11 @@ export default function Home() {
             <h3 className="text-sm font-bold text-slate-800 uppercase tracking-wider">
               X-ray Input Source
             </h3>
+
+            <div className="bg-blue-50/50 border border-blue-100 rounded-2xl p-3.5 text-blue-800 text-xs leading-relaxed font-medium">
+              <span className="font-bold block mb-0.5 text-blue-900">Upload Instruction</span>
+              The model is currently trained and works on chest x ray images only, so please upload only chest x ray images. Do not upload any other image.
+            </div>
             
             <UploadBox
               selectedFile={selectedFile}
