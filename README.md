@@ -320,7 +320,7 @@ Upload a chest X-ray image using `multipart/form-data`.
 
 * 🎓 B.Tech CSE, NIT Rourkela
 * 🐙 GitHub: https://github.com/lakshyakarn10
-* 💼 LinkedIn: *Add your LinkedIn profile URL*
+* 💼 LinkedIn: https://www.linkedin.com/in/lakshya-karn-03332a37b
 
 ---
 
