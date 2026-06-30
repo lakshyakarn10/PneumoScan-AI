@@ -8,7 +8,7 @@ Detect pneumonia from chest X-ray images using **Deep Learning** with **ResNet18
 
 Built with **PyTorch**, **FastAPI**, **React**, and **Tailwind CSS**.
 
-[🌐 Live Demo](https://pneumono-scan.lakshyakarn.com.np/) • [🚀 Backend API](https://pneumoscan-ai-backend.onrender.com)
+[🌐 Live Demo](https://pneumo-scan.lakshyakarn.com.np/) • [🚀 Backend API](https://pneumoscan-ai-backend.onrender.com)
 
 </div>
 
