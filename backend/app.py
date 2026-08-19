@@ -1,9 +1,12 @@
 from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-
+from dotenv import load_dotenv
 from predict import predict_image
 from model import load_model
+import os
 
+load_dotenv()
+frontend_origin = os.getenv("FRONTEND_ORIGIN")
 
 app = FastAPI(
     title="Pneumonia Classifier API",
@@ -14,7 +17,7 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://pneumo-scan.lakshyakarn.com.np","https://pneumo-scan-ai-phi.vercel.app"],      
+    allow_origins=frontend_origin,      
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

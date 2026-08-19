@@ -3,6 +3,7 @@ annotated-types==0.7.0
 anyio==4.14.1
 click==8.4.2
 colorama==0.4.6
+dotenv==0.9.9
 fastapi==0.138.1
 filelock==3.29.4
 fsspec==2026.6.0
